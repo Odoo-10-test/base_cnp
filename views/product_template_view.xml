@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="cnp_product_form_view">
+            <field name="name">product.template.form.inherited</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_only_form_view"/>
+            <field name="arch" type="xml">
+                <field name="barcode" position="after">
+                    <field name="precio_minimo_c" attrs="{'invisible':[('type', '!=', 'product')]}"/>
+                    <field name="precio_minimo" attrs="{'invisible':[('type', '!=', 'product')]}"/>
+                    <field name="cnp_origen" attrs="{'invisible':[('type', '!=', 'product')]}"/>
+                    <field name="cnp_familia" attrs="{'invisible':[('type', '!=', 'product')]}"/>
+                    <field name="cnp_area" attrs="{'invisible':[('type', '!=', 'product')]}"/>
+                    <field name="cnp_linea" attrs="{'invisible':[('type', '!=', 'product')]}"/>
+                    <field name="cnp_grupos" attrs="{'invisible':[('type', '!=', 'product')]}"/>
+                    <field name="cnp_subgrupos" attrs="{'invisible':[('type', '!=', 'product')]}"/>
+                    <field name="cnp_categoria" attrs="{'invisible':[('type', '!=', 'product')]}"/>
+                </field>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_cnp_product_tree_view">
+        <field name="name">Productos</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_tree_view"/>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+               <field name="cnp_familia"/>
+               <field name="cnp_area"/>
+               <field name="cnp_linea"/>
+               <field name="cnp_grupos"/>
+               <field name="cnp_subgrupos"/>
+               <field name="cnp_familia"/>
+               <field name="cnp_categoria"/>
+            </field>
+        </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="partner_argentina_form_view">
+            <field name="name">res.partner.form.inherited</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <field name="email" position="after">
+                    <field name="forma_pago" required="True"/>
+                    <field name="credito" required="True"/>
+                    <field name="rubro" required="True"/>
+                </field>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_res_argentina_tree_view">
+        <field name="name">Partners</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree"/>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <field name="display_name" position="after">
+               <field name="rubro"/>
+            </field>
+        </field>
+        </record>
+
+    </data>
+</odoo>

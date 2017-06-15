@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <odoo>
+        <data noupdate="1">
+            <record id="cnp_origen_01" model="cnp.origen">
+                   <field name="name">PTE</field>
+               </record>
+            <record id="cnp_origen_02" model="cnp.origen">
+                   <field name="name">PTI</field>
+               </record>
+
+
+            <record id="cnp_familia_01" model="cnp.familia">
+                   <field name="name">CONSTRUCCION</field>
+               </record>
+            <record id="cnp_familia_02" model="cnp.familia">
+                   <field name="name">DECORACION</field>
+               </record>
+
+
+            <record id="cnp_area_01" model="cnp.area">
+                   <field name="name">OBRA GRUESA</field>
+               </record>
+            <record id="cnp_area_02" model="cnp.area">
+                   <field name="name">TERMINACIONES</field>
+               </record>
+
+            <record id="cnp_linea_01" model="cnp.linea">
+                   <field name="name">REFUERZO CONCRETO</field>
+               </record>
+            <record id="cnp_linea_02" model="cnp.linea">
+                   <field name="name">ACC. CERAMICA</field>
+               </record>
+            <record id="cnp_linea_03" model="cnp.linea">
+                   <field name="name">CELOSIAS</field>
+               </record>
+
+
+            <record id="cnp_grupos_01" model="cnp.grupos">
+                   <field name="name">MOLDAJES</field>
+               </record>
+            <record id="cnp_grupos_02" model="cnp.grupos">
+                   <field name="name">ESQUINERO DE CERAMICA</field>
+               </record>
+            <record id="cnp_grupos_03" model="cnp.grupos">
+                   <field name="name">SELLO TINA</field>
+               </record>
+            <record id="cnp_grupos_04" model="cnp.grupos">
+                   <field name="name">ANGULO PVC</field>
+               </record>
+            <record id="cnp_grupos_05" model="cnp.grupos">
+                   <field name="name">CELOSIA TINA SHAFT MURO</field>
+               </record>
+
+
+            <record id="cnp_subgrupos_01" model="cnp.subgrupos">
+                   <field name="name">SEPARADORES DE MOLDAJES</field>
+               </record>
+            <record id="cnp_subgrupos_03" model="cnp.subgrupos">
+                   <field name="name">ESQUINERO CERAMICA ENCUENTRO</field>
+               </record>
+            <record id="cnp_subgrupos_04" model="cnp.subgrupos">
+                   <field name="name">SELLO TINA</field>
+               </record>
+            <record id="cnp_subgrupos_05" model="cnp.subgrupos">
+                   <field name="name">ANGULO PVC SIMETRICO</field>
+               </record>
+
+
+             <record id="cnp_familia_01" model="cnp.familiam">
+                   <field name="name">PE</field>
+               </record>
+             <record id="cnp_familia_02" model="cnp.familiam">
+                   <field name="name">PVC</field>
+               </record>
+            <record id="cnp_familia_03" model="cnp.familiam">
+                   <field name="name">PP</field>
+               </record>
+
+
+            <record id="cnp_categoria_01" model="cnp.categoria">
+                   <field name="name">PEAD</field>
+               </record>
+            <record id="cnp_categoria_02" model="cnp.categoria">
+                   <field name="name">PVC RIGIDO</field>
+               </record>
+            <record id="cnp_categoria_03" model="cnp.categoria">
+                   <field name="name">PP</field>
+               </record>
+
+
+
+            <record id="cnp_formapago_01" model="cnp.formapago">
+                   <field name="name">TE</field>
+               </record>
+            <record id="cnp_formapago_02" model="cnp.formapago">
+                   <field name="name">CH</field>
+               </record>
+
+
+            <record id="cnp_rubro_01" model="cnp.rubro">
+                   <field name="name">RETAIL</field>
+               </record>
+            <record id="cnp_rubro_02" model="cnp.rubro">
+                   <field name="name">VENTANAS</field>
+               </record>
+            <record id="cnp_rubro_03" model="cnp.rubro">
+                   <field name="name">CONSTRUCCION</field>
+               </record>
+            <record id="cnp_rubro_04" model="cnp.rubro">
+                   <field name="name">DISTRIBUIDOR</field>
+               </record>
+
+
+        </data>
+    </odoo>
